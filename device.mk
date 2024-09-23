@@ -69,6 +69,14 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
+# Keystore2
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+# Drm
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4    
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
