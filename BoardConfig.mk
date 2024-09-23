@@ -22,6 +22,7 @@ AB_OTA_PARTITIONS += \
     vendor_dlkm \
     system_dlkm \
     vendor \
+    vendor_boot \
     odm \
     system \
     boot \
