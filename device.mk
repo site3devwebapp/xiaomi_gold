@@ -7,6 +7,10 @@
 
 LOCAL_PATH := device/xiaomi/gold
 
+# API
+PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_TARGET_VNDK_VERSION := 31
+
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
