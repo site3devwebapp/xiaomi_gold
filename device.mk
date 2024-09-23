@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6833
+    bootctrl.mt6833 \
     bootctrl.mt6833.recovery
 
 # Additional Target Libraries
