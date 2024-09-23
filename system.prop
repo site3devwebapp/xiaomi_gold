@@ -8,6 +8,9 @@ ro.postinstall.fstab.prefix=/system
 ro.sys.usb.storage.type=mtp
 
 # Misc
+ro.adb.secure=0
+
+# MTK
 ro.vendor.mediatek.platform=MT6833
 ro.hardware=mt6833
 
