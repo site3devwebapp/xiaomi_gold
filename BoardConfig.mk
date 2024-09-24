@@ -14,21 +14,6 @@ BUILD_BROKEN_PREBUILT_ELF_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 SOONG_ALLOW_MISSING_DEPENDENCIES := true
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    product \
-    vbmeta_vendor \
-    vendor_dlkm \
-    system_dlkm \
-    vendor \
-    vendor_boot \
-    odm \
-    system \
-    boot \
-    vbmeta_system \
-    odm_dlkm
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
