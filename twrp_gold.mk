@@ -28,3 +28,6 @@ PRODUCT_MODEL := gold
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Hide Reflash TWRP
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
