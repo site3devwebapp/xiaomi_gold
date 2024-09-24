@@ -11,6 +11,22 @@ LOCAL_PATH := device/xiaomi/gold
 PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_TARGET_VNDK_VERSION := 31
 
+# A/B
+AB_OTA_UPDATER := true
+TARGET_ENFORCE_AB_OTA_PARTITION_LIST := true
+AB_OTA_PARTITIONS += \
+    product \
+    vbmeta_vendor \
+    vendor_dlkm \
+    system_dlkm \
+    vendor \
+    vendor_boot \
+    odm \
+    system \
+    boot \
+    vbmeta_system \
+    odm_dlkm
+
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
