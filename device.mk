@@ -15,17 +15,39 @@ PRODUCT_TARGET_VNDK_VERSION := 31
 AB_OTA_UPDATER := true
 TARGET_ENFORCE_AB_OTA_PARTITION_LIST := true
 AB_OTA_PARTITIONS += \
+    apusys \
+    audio_dsp \
+    boot \
+    ccu \
+    dpm \
+    dtbo \
+    gpueb \
+    gz \
+    lk \
+    logo \
+    mcf_ota \
+    mcupm \
+    md1img \
+    mvpu_algo \
+    odm \
+    odm_dlkm \
+    pi_img \
+    preloader_raw \
     product \
+    scp \
+    spmfw \
+    sspm \
+    system \
+    system_ext \
+    tee \
+    vbmeta \
+    vbmeta_system \
     vbmeta_vendor \
-    vendor_dlkm \
-    system_dlkm \
+    vcp \
     vendor \
     vendor_boot \
-    odm \
-    system \
-    boot \
-    vbmeta_system \
-    odm_dlkm
+    vendor_dlkm \
+    mi_ext
 
 PRODUCT_PACKAGES += \
     update_engine \
@@ -34,7 +56,7 @@ PRODUCT_PACKAGES += \
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    POSTINSTALL_PATH_system=system/bin/mtk_plpath_utils \
     FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
