@@ -131,7 +131,6 @@ TARGET_SCREEN_WIDTH := 1080
 # System as root
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # Recovery
 TARGET_NO_RECOVERY := true
@@ -185,13 +184,6 @@ TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_DEVICE_VERSION := Redmi Note 13 5g | Nazephyrus
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
-TW_HAS_MTP := true
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
-
-# USB OTG
-TW_USB_STORAGE := true
-
-# Support /data/media
-RECOVERY_SDCARD_ON_DATA := true
